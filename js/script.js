@@ -23,8 +23,13 @@ document.querySelector('.button-secondary').addEventListener('click', function()
 // HUBUNGI KAMI//
 const ButtonHub = document.querySelector('.hubungi-kami');
 const  modalitem = document.querySelector('#modal-content');
+const kontak = document.querySelector('#kontak');
 
 ButtonHub.onclick = (e) => {
+    modalitem.style.display = 'flex';
+    e.preventDefault();
+}
+kontak.onclick = (e) => {
     modalitem.style.display = 'flex';
     e.preventDefault();
 }

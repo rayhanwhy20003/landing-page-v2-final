@@ -126,7 +126,7 @@
 /* HOME */
 .home{
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     display: flex;
     gap:25px;
     padding: 1.7rem 7%;
@@ -163,7 +163,7 @@
     /* display: flex; */
     /* flex-direction: column; */
     
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
     color:var(--primary-font);
     
@@ -171,7 +171,7 @@
 .home-container-content h1 span{
     /* display: flex; */
     /* flex-direction: column; */
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
     color:var(--primary-font-two);
     line-height: 0.5;
@@ -212,7 +212,7 @@
 .deskripsi{
     margin-top: 2rem;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: gray;
 
     span{
