@@ -552,7 +552,7 @@
 }
 .credit{
     height: max-content;
-    background-color:var(--primary-font);
+    background-color:var(--primary-footer);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -564,6 +564,7 @@
         font-size: 15px;
         color: #ffffff;
         height: max-content;
+        font-size: 12px;
         
     }
 }
