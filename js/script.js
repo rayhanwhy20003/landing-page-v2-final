@@ -8,8 +8,8 @@ ButtonMenu.addEventListener('click', function(){
     navbar.classList.toggle('slide');
 })
 
-const logo = document.querySelector('.logo-client').cloneNode(true);
-document.querySelector('.container-client-content').appendChild(logo)
+// const logo = document.querySelector('.logo-client').cloneNode(true);
+// document.querySelector('.container-client-content').appendChild(logo)
 
 //login button//
 document.querySelector('.Login-Button').addEventListener('click', function() {
@@ -23,7 +23,7 @@ document.querySelector('.button-secondary').addEventListener('click', function()
 // HUBUNGI KAMI//
 const ButtonHub = document.querySelector('.hubungi-kami');
 const  modalitem = document.querySelector('#modal-content');
-const kontak = document.querySelector('#kontak');
+const kontak = document.querySelectorAll('#kontak');
 
 ButtonHub.onclick = (e) => {
     modalitem.style.display = 'flex';
@@ -52,8 +52,8 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home',{ origin: 'left' });
 ScrollReveal().reveal('.home-container-side',{ origin: 'left' });
-ScrollReveal().reveal('.container-deskription',{ origin: 'left' });
-ScrollReveal().reveal('.blog-content',{ origin: 'right' });
+// ScrollReveal().reveal('.container-deskription',{ origin: 'left' });
+// ScrollReveal().reveal('.blog-content',{ origin: 'right' });
 
 //scroll behavior//
 const navlinks = document.querySelectorAll('.nav-links');

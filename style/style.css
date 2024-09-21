@@ -63,8 +63,8 @@
 .navbar-nav{
     /* background-color: aqua; */
     position: absolute;
-    width: 40rem;
-    right: 0rem;
+    width: 30rem;
+    right: -4rem;
     z-index: -100;
     /* transition: transform 0.5s ease, z-index 0.5s ease; */
     
@@ -78,6 +78,7 @@
 }
 .Login-Button{
     padding: 10px;
+    width: 150px;
     border-radius: 5px;
     background-color: var(--primary-font);
     color: var(--primary-text);
@@ -226,9 +227,11 @@
     padding: 1.7rem 7%;
     height: 20rem;
     background-color:var(--primary-text);
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     .client-text{
         font-weight: 800;
         font-size: medium;
@@ -239,6 +242,7 @@
 }
 .container-client-content{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .logo-client{
@@ -247,14 +251,15 @@
     /* height: 20rem; */
     justify-content: center;
     align-items: center;
-    gap:5rem;
+    flex-wrap: wrap;
+    gap:2rem;
     padding: 1rem;
-    animation: infinite-scroll 7s linear infinite;
+    /* animation: infinite-scroll 7s linear infinite; */
     /* flex-shrink: 2; */
     
     img{
         margin-top: 2rem;
-        width: 150px;
+        width: 100px;
         filter: grayscale(1);
     }
     img:hover{
@@ -352,14 +357,14 @@
         background-color: rgb(139, 255, 129);
     }
 }
-@keyframes infinite-scroll{
+/* @keyframes infinite-scroll{
     from{
         transform: translateX(0);
     }
     to{
         transform: translateX(-100%);
     }
-}
+} */
 
 
 
@@ -634,6 +639,7 @@
         color: black;
         
     }
+    
 }
 /* modal animmation */
 @keyframes slidemodal{
@@ -682,6 +688,8 @@
     
     .Login-Button{
         margin-top: 2rem;
+        width: 100%;
+        
     }
     .navbar-nav.slide{
         transform: translateY(0);
